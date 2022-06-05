@@ -51,7 +51,7 @@ export const __getPosts = () => async(dispatch, getState) => {
     }catch(error){
         dispatch(getPostError(error))
     }finally{
-        dispatch(getPostRequest(true))
+        dispatch(getPostRequest(false))
     }
 }
 
@@ -63,7 +63,7 @@ export const __addPost = (payload) => async (dispatch, getState) =>{
     }catch(error){
         dispatch(getPostError(error))
     }finally{
-        dispatch(getPostRequest(true))
+        dispatch(getPostRequest(false))
     }
 }
 
@@ -79,7 +79,7 @@ export const __updatePost = (payload, index) => async (dispatch, getState) =>{
     }catch(error){
         dispatch(getPostError(error))
     }finally{
-        dispatch(getPostRequest(true))
+        dispatch(getPostRequest(false))
     }
 }
 
@@ -97,7 +97,7 @@ export const __deletePost = (payload) => async (dispatch, getState) => {
     }catch(error){
         dispatch(getPostError(error))
     }finally{
-        dispatch(getPostRequest(true))
+        dispatch(getPostRequest(false))
     }
 }
 
