@@ -25,18 +25,19 @@ export default function Home() {
     return <p>ERROR</p>;
   }
 
-  const typeThree = list.filter((value)=> value.type === 3 ).map((value)=>{
-    return <CardSecond></CardSecond>
-  })
-  const typeOne = list.filter((value)=> value.type === 1 ).map((value)=>{
-    return <Card></Card>
-  })
+  // const typeThree = list.filter((value)=> value.type === 3 ).map((value)=>{
+  //   return <CardSecond></CardSecond>
+  // })
+  // const typeOne = list.filter((value)=> value.type === 1 ).map((value)=>{
+  //   return <Card></Card>
+  // })
 
 
   return (
     <>
-      {typeThree}
-      {typeOne}
+      {/* {typeThree}
+      {typeOne} */}
+      <Card />
       <StButton
       onClick={() => {
         navigate('/create')

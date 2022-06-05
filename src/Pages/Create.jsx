@@ -22,7 +22,7 @@ export default function Create() {
         __addPost({
           title: title.current.value,
           content: content.current.value,
-          type:1,
+          // type:1,
         })
       );
       alert("단어 저장 완료 ! ");
