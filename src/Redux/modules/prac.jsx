@@ -130,6 +130,16 @@ const postReducer = (state = initialState, {type, payload}) =>{
                 ...state,
                 list: [...dataDelete]
             }
+        case GET_POST_REQUEST:
+            return{
+                ...state,
+                loading: payload,
+            }
+        case GET_POST_ERROR:
+            return{
+                ...state,
+                error: payload,
+            }
         default:
             return state;
     }
